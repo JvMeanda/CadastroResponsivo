@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo,
+.planeta {
+  margin-top: 0.3%;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.3%;
+  border-bottom: solid 1px black;
+}
+
+.planeta {
+  position: relative;
+  left: 0.5%;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ededed;
+}
+
+.container {
+  position: relative;
+  width: 380px;
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-radius: 5%;
+  padding: 2%;
+}
+
+form {
+  position: relative;
+  width: 100%;
+}
+
+.container h3 {
+  color: #05b89d;
+  font-weight: 600px;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.borda {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+span {
+  display: inline-block;
+  color: #05b89d;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  border-left: 4px solid #05b89d;
+  padding-left: 4px;
+  line-height: 1em;
+}
+
+.informacoes {
+  display: flex;
+  position: relative;
+}
+
+.borda .informacoes .icone {
+  position: relative;
+  min-width: 40px;
+  height: 40px;
+  background-color: #05b89d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.15em;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.borda .informacoes input {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="button"] {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #05b89d;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+label input {
+  margin-right: 5px;
+}
+
+.esqueci {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  color: #000;
+  text-decoration: none;
+}
+
+.esqueci:hover{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    color: #000;
+    text-decoration: underline;
+}
+
+@media(max-width:999px){
+
+  header .planeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .container{
+    width: auto;
+    height: auto;
+    bottom: 37px;
+  }
+
+  .container h3{
+    font-size: 1.5em;
+  }
+  span{
+    font-size: 0.8em;
+    position: relative;
+    left: 10px;
+  }
+  .borda .informacoes{
+   position: relative;
+   width: 83%;
+   display: flex;
+   align-items: center center;
+   left: 13px;
+  }
+
+  label{
+    position: relative;
+    padding: 15px;
+  }
+
+  .esqueci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+  }
+  input[type="button"]{
+    position: relative;
+    max-width: 83%;
+    left: 8%;
+  }
+  .planeta{
+    position: relative;
+    padding-left: 1.5%;
+    font-size: 1.4em;
+  }
+
+  .planeta, .logo{
+    position: relative;
+    display: flex;
+    justify-content: center center;
+  }
+}
