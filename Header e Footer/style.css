@@ -56,6 +56,7 @@ main {
     inset -5px -5px 15px rgba(0, 0, 0, 0.75);
   border-radius: 5%;
   padding: 2%;
+  bottom: 95px;
 }
 
 form {
@@ -73,6 +74,7 @@ form {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: underline;
+
 }
 
 .borda {
@@ -171,6 +173,29 @@ label input {
     text-decoration: underline;
 }
 
+.bottom{
+  text-align: center;
+  position: absolute;
+  border-top: solid 1px black;
+  bottom: 0%;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  left: 0%;
+  padding: 10px;
+}
+
+.credits{
+  text-decoration: none;
+  color: #000;
+}
+
+.cor{
+  color: #05b89d;
+  font-size: 1em;
+  display: inline-block;
+}
+
 @media(max-width:999px){
 
   header .planeta{
@@ -183,6 +208,8 @@ label input {
     width: auto;
     height: auto;
     bottom: 37px;
+    position: absolute;
+    bottom: 25%;
   }
 
   .container h3{
